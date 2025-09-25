@@ -1,0 +1,11 @@
+<svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50.000000" height="50.000000" fill="none" customFrame="#000000">
+	<defs>
+		<linearGradient id="paint_linear_0" x1="7.5" x2="7.5" y1="-4.59242576e-16" y2="15" gradientUnits="userSpaceOnUse">
+			<stop stop-color="rgb(187.756,16.1766,215.688)" offset="0" stop-opacity="1" />
+			<stop stop-color="rgb(79.9,0,249.688)" offset="1" stop-opacity="0.930000007" />
+		</linearGradient>
+	</defs>
+	<rect id="Play" width="50.000000" height="50.000000" x="0.000000" y="0.000000" />
+	<circle id="Ellipse 1" cx="25" cy="25" r="25" fill="rgb(246,244,245)" />
+	<path id="Polygon 1" d="M7.5 0L13.9952 11.25L1.00481 11.25L7.5 0Z" fill="url(#paint_linear_0)" fill-rule="nonzero" transform="matrix(1.04083e-17,1,-1,1.04083e-17,32,17)" />
+</svg>
