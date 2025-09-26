@@ -169,16 +169,24 @@ body {
 
 .features__title {
     flex-basis: 300px;
-    padding-right: 20;
+    padding-right: 20px;
+}
+
+.section-text {
+    background: var(--gradient, linear-gradient(180.00deg, rgba(187.75599670410156, 16.17656707763672, 215.6875, 1),rgba(79.9000473022461, 0, 249.6875, 0.93) 100%));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    font-size: 36px;
+    text-transform: uppercase;
+
 }
 
 .features__text {
     max-width: 330px;
-    font-size: 36px;
     margin-bottom: 2px;
-    background: var(--gradient, linear-gradient(180.00deg, rgba(187.75599670410156, 16.17656707763672, 215.6875, 1),rgba(79.9000473022461, 0, 249.6875, 0.93) 100%));
+    /* background: var(--gradient, linear-gradient(180.00deg, rgba(187.75599670410156, 16.17656707763672, 215.6875, 1),rgba(79.9000473022461, 0, 249.6875, 0.93) 100%));
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent; */
 }
 
 .tabs {
@@ -200,21 +208,14 @@ body {
     color: #070707;
 }
 
-/* .tabs__content {
-    position: relative;
-    min-height: 300px;
-} */
-
 .tabs__content-item {
-    display: grid;
+    display: none;
     grid-template-columns: 580px auto 280px;
     grid-template-rows: auto 150px;
-    opacity: 0;
-    /* position: absolute; */
 }
 
 .tabs__content-item--active{
-    opacity: 1;
+    display: grid;
 
 }
 
@@ -229,6 +230,7 @@ body {
     grid-row: 1 / -1;
     display: flex;
     justify-self: center;
+    /* padding: 0 20px; */
 }
 
 .tabs__content-box h3 {
@@ -264,3 +266,123 @@ body {
     color: var(--white, rgba(246, 244, 245, 1));
     font-size: 13px;
 }
+
+.games {
+    margin-bottom: 100px;
+}
+
+
+.games__grid {
+    display: grid;
+    grid-template-columns: 300px auto;
+}
+
+
+.games__title {
+    margin-bottom: 50px;
+}
+
+.games__text {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.games__subtext {
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+
+.games__titles-btn {
+    background: var(--gradient, linear-gradient(180.00deg, rgba(187.75599670410156, 16.17656707763672, 215.6875, 1),rgba(79.9000473022461, 0, 249.6875, 0.93) 100%));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    padding: 14px 46px;
+    border: 1px solid rgba(187.75599670410156, 16.17656707763672, 215.6875, 1);
+    display: inline-block;
+    
+}
+
+.games__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* justify-content: center;
+    align-content: center; */
+}
+
+.games__list-item {
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 13px;
+    border: 1px solid rgba(187.75599670410156, 16.17656707763672, 215.6875, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.games__list-item img {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+
+.games__list-item h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--Black, rgba(7, 7, 7, 1));
+}
+
+.games__list-item p {
+    padding-bottom: 40px;
+    padding-right: 5px;
+    line-height: 1;
+}
+
+.games__list-item a {
+    background: var(--gradient, linear-gradient(180.00deg, rgba(187.75599670410156, 16.17656707763672, 215.6875, 1),rgba(79.9000473022461, 0, 249.6875, 0.93) 100%));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    padding-bottom: 22px;
+    margin-top: auto;
+}
+
+.vr {
+    margin-bottom: 100px;
+}
+
+.vr__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+.vr__content-img {
+    margin-bottom: 30px;
+    max-width: 347px;
+    max-height: 334px;
+}
+
+.vr__content-bg {
+    background: var(--gradient, linear-gradient(180.00deg, rgba(187.75599670410156, 16.17656707763672, 215.6875, 1),rgba(79.9000473022461, 0, 249.6875, 0.93) 100%));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    font-size: 400px;
+    font-weight: 700;
+    line-height: 100%;
+    opacity: 0.1;
+    position: absolute;
+    z-index: -1;
+    animation: line-text 6s linear 1s infinite;
+}
+
+@keyframes line-text {
+    from {
+        transform: translateX(115%);
+    }
+    to {
+        transform: translateX(-115%);
+    }
+}
+
